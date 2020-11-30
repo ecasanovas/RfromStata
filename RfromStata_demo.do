@@ -24,6 +24,7 @@
 	** And back to Stata 
 	use "mydata.dta", clear
 	line produc_1948 year, title("Productivity growth since 1948") lcolor(red) xtitle("") ytitle("") scheme(s1mono)
+	graph export "product.png", as(png) fontface(garamond) replace 	
 	
 	erase "mydata.dta"
 	
